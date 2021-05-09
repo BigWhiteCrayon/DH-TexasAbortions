@@ -1,0 +1,82 @@
+{
+    "Loc1973":[
+      {
+        "name": "Southwestern Women's",
+        "lat": 32.88677263747155,
+        "long": -96.75984034637284
+      }
+    ], 
+
+    "currentLocations" :[
+        {
+          "name": "Southwestern Women's",
+          "lat": 32.88677263747155,
+          "long": -96.75984034637284
+        },
+        {
+          "name": "PP El Paso",
+          "lat": 31.770626500234933,
+          "long": -106.476550586872
+        },
+        {
+          "name": "PP Stafford",
+          "lat": 29.639180783826408,
+          "long": -95.58304905808744
+        },
+        {
+          "name": "HOUSTON WOMENS CLINIC",
+          "lat": 29.730060347944757,
+          "long": -95.38429353110503
+        },
+        {
+          "name": "HOUSTON WOMENS REPRODUCTIVE SERVICES",
+          "lat":  29.776905376506917,
+          "long": -95.41399024459403
+        },
+        {
+          "name": "SUBURBAN WOMENS CLINIC",
+          "lat": 29.733699293668252,
+          "long": -95.42492711761477
+        },
+        {
+          "name": "SUBURBAN WOMENS Medical Center",
+          "lat": 30.019154950846925,
+          "long": -95.52696130598198
+        },
+        {
+          "name": "WOMEN\"S CENTER OF HOUSTON",
+          "lat":  29.689275926871716,
+          "long": -95.52696130598198
+        },
+        {
+          "name": "WHOLE WOMANS HEALTH OF MCALLEN",
+          "lat": 26.196826080514107,
+          "long": -98.23579224281823
+        },
+        {
+          "name": "PP Lubbock",
+          "lat": 33.57464859787259,
+          "long": -101.89608838868158
+        },
+        {
+          "name": "PP Waco",
+          "lat": 31.517466234503853,
+          "long": -97.205168234984
+        },
+        {
+          "name": "WHOLE WOMANS HEALTH OF FORT WORTH",
+          "lat": 32.72533027263901,
+          "long": -97.43523083103058
+        },
+        {
+          "name": "AUSTIN WOMENS HEALTH CENTER",
+          "lat": 30.239598550116895,
+          "long": -97.73884637527591
+        },
+        {
+          "name": "WHOLE WOMANS HEALTH ALLIANCE",
+          "lat": 30.411933176699485,
+          "long": -97.72785904457878
+        }
+      ]
+}
