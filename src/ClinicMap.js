@@ -7,7 +7,7 @@ import blankCounties from './texas_counties.png';
 
 class ClinicMap extends React.Component {
     state = {
-      time: 'current',
+      time: 'PreHB2',
       overlay: false,
       radius: false,
       radiusDistance: 160934.4
@@ -22,6 +22,12 @@ class ClinicMap extends React.Component {
       else if(this.state.time === '1973'){
           locations = clinicLocations.Loc1973;
       }
+      else if(this.state.time ==='PreHB2'){
+        locations = clinicLocations.PreHB2;
+      }
+      else if(this.state.time === 'PostHB2'){
+        locations = clinicLocations.PostHB2;
+    }
       return (
         <div className="containerStyle" >
         
@@ -59,6 +65,12 @@ class ClinicMap extends React.Component {
         <button className="dateButton"
           onClick={this.handleClick1973}
           disabled = {this.state.time === '1973'}>1973</button>
+        <button className="dateButton"
+          onClick={this.handleClickPreHB2}
+          disabled = {this.state.time === 'PreHB2'}>Pre-HB2</button>
+        <button className="dateButton"
+          onClick={this.handleClickPostHB2}
+          disabled = {this.state.time === 'PostHB2'}>Post-HB2</button>
         <button className="dateButton" onClick={this.handleClickCurrent}
            disabled = {this.state.time === 'current'}>Current</button>
         <button className="overlayButton" onClick={this.handleClickOverlay}>Toggle Overlay</button>
@@ -79,6 +91,14 @@ class ClinicMap extends React.Component {
 
   handleClick1973 = () => {
       this.setState({time: '1973'})
+  }
+
+  handleClickPreHB2 = () => {
+    this.setState({time: 'PreHB2'})
+  }
+
+  handleClickPostHB2 = () => {
+    this.setState({time: 'PostHB2'})
   }
   handleClickOverlay = () => {
       this.setState({overlay: !this.state.overlay});

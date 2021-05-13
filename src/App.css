@@ -10,10 +10,10 @@
 
 .Header{
   position:fixed;
-  height: 10%;
+  height: 10vh;
   align-items: center;
   background-color: mediumslateblue;
-  padding-top: 1.5%;
+  padding-top: 1.5vh;
   padding-bottom: 0;
   padding-left: 5%;
   color: white;
@@ -25,7 +25,7 @@
   background-color: whitesmoke;
   padding: 5%;
   margin: 2.5%;
-  margin-top: 15%;
+  margin-top: 13vh;
   margin-bottom: 0;
   width: 85%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -43,19 +43,35 @@
   border-radius: 5px;
   justify-items: center;
 }
+
 .Title{
-  padding-left: 2.5%;
+  padding-left: 2.5vw;
   padding-bottom: 0%;
-  font-size: 3.5vw;
+  color: white;
+  font-size: calc(36px + 0.5vh);
   text-align: left
 }
-
+.TitleNarrow{
+  padding-left: 2.5vw;
+  padding-bottom: 0%;
+  color: red;
+  font-size: calc(36px + 0.5vw);
+  text-align: left
+}
+.SubtitleHeading{
+  padding: 5%;
+  padding-top: 0% ;
+  padding-left: 2.5%;
+  padding-bottom: 0%;
+  font-size: calc(24px + 0.5vw);
+  text-align: left
+}
 .Subtitle{
   padding: 5%;
   padding-top: 0% ;
   padding-left: 2.5%;
   padding-bottom: 0%;
-  font-size: 2.5vw;
+  font-size: calc(24px + 0.5vw);
   text-align: left
 }
 
@@ -63,7 +79,7 @@
   display: block;
   padding: 5%;
   width: 85%;
-  font-size: 1.5vw;
+  font-size: calc(16px + 0.5vw);
   text-align: justify;
 }
 

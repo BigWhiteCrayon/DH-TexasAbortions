@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <div className="Header">
         <header className="Title">How Hard has Getting an Abortion Been in Texas</header>
-        <header className="Subtitle">and Why is that so Hard to Answer</header>
+        <header className="SubtitleHeading">and Why is that so Hard to Answer</header>
       </ div>
       <div className="TopCard">
         <header className="Subtitle">The Change in Abortion Availabilty through the Years</header>
