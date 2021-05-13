@@ -20,11 +20,26 @@ class Blogs extends React.Component{
         return(
             this.text.map((post, index) => 
             <div className = "Card">
-                    <ReactMarkdown key = {index}>{post}</ReactMarkdown>
+                    <ReactMarkdown components ={{h1:headerRenderer, p:textRenderer}}
+                    key = {index}>{post}</ReactMarkdown>
             </ div>
             )
         )
     }
 }
 
+const headerRenderer = (props) => {
+    return(
+        <div>
+        <header className="Subtitle">{props.children[0]}</header>
+        <div className="Divider" />
+        </ div>
+    );
+}
+
+const textRenderer = (props) => {
+    return(
+        <text className="bodyText">{props.children[0]}</ text>
+    );
+}
 export default Blogs;
