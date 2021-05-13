@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/DH-AbortionProject/static/css/main.551cbd85.chunk.css",
+    "main.js": "/DH-AbortionProject/static/js/main.f3046dfa.chunk.js",
+    "main.js.map": "/DH-AbortionProject/static/js/main.f3046dfa.chunk.js.map",
+    "runtime-main.js": "/DH-AbortionProject/static/js/runtime-main.e26a7a39.js",
+    "runtime-main.js.map": "/DH-AbortionProject/static/js/runtime-main.e26a7a39.js.map",
+    "static/js/2.97fa0269.chunk.js": "/DH-AbortionProject/static/js/2.97fa0269.chunk.js",
+    "static/js/2.97fa0269.chunk.js.map": "/DH-AbortionProject/static/js/2.97fa0269.chunk.js.map",
+    "index.html": "/DH-AbortionProject/index.html",
+    "static/css/main.551cbd85.chunk.css.map": "/DH-AbortionProject/static/css/main.551cbd85.chunk.css.map",
+    "static/js/2.97fa0269.chunk.js.LICENSE.txt": "/DH-AbortionProject/static/js/2.97fa0269.chunk.js.LICENSE.txt",
+    "static/media/TEST.c8167c86.md": "/DH-AbortionProject/static/media/TEST.c8167c86.md",
+    "static/media/Test2.b7482284.md": "/DH-AbortionProject/static/media/Test2.b7482284.md",
+    "static/media/texas_counties.bb62b53f.png": "/DH-AbortionProject/static/media/texas_counties.bb62b53f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e26a7a39.js",
+    "static/js/2.97fa0269.chunk.js",
+    "static/css/main.551cbd85.chunk.css",
+    "static/js/main.f3046dfa.chunk.js"
+  ]
+}
