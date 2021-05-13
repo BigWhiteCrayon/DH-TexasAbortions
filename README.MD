@@ -1,7 +1,13 @@
-# Abortion Clinics in Texas Project
+# How Hard has Getting an Abortion Been in Texas
 
-Current Progress
+### and Why is that so Hard to Answer
 
-![](image/README/1620600409590.png)
+this repo is meant for a DH project for college. If this isn't totally deprectaed it will be running [here](https://bigwhitecrayon.github.io/DH-TexasAbortions/)
 
-![](image/README/1620600382413.png)
+---
+
+The purpose is mainly to look at the history of Abortions in Texas and try to draw some conclusions.
+
+Progress 5/12/21
+
+![](image/README/1620870702060.png)
