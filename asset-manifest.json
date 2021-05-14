@@ -1,17 +1,23 @@
 {
   "files": {
-    "main.css": "/DH-TexasAbortions/static/css/main.4f5be944.chunk.css",
-    "main.js": "/DH-TexasAbortions/static/js/main.ae1348ea.chunk.js",
-    "main.js.map": "/DH-TexasAbortions/static/js/main.ae1348ea.chunk.js.map",
+    "main.css": "/DH-TexasAbortions/static/css/main.4fd8c7ef.chunk.css",
+    "main.js": "/DH-TexasAbortions/static/js/main.a8f82cf5.chunk.js",
+    "main.js.map": "/DH-TexasAbortions/static/js/main.a8f82cf5.chunk.js.map",
     "runtime-main.js": "/DH-TexasAbortions/static/js/runtime-main.cc2c35fa.js",
     "runtime-main.js.map": "/DH-TexasAbortions/static/js/runtime-main.cc2c35fa.js.map",
     "static/js/2.2c3a3ca2.chunk.js": "/DH-TexasAbortions/static/js/2.2c3a3ca2.chunk.js",
     "static/js/2.2c3a3ca2.chunk.js.map": "/DH-TexasAbortions/static/js/2.2c3a3ca2.chunk.js.map",
     "index.html": "/DH-TexasAbortions/index.html",
-    "static/css/main.4f5be944.chunk.css.map": "/DH-TexasAbortions/static/css/main.4f5be944.chunk.css.map",
+    "static/css/main.4fd8c7ef.chunk.css.map": "/DH-TexasAbortions/static/css/main.4fd8c7ef.chunk.css.map",
     "static/js/2.2c3a3ca2.chunk.js.LICENSE.txt": "/DH-TexasAbortions/static/js/2.2c3a3ca2.chunk.js.LICENSE.txt",
     "static/media/DataBlog.6c5b6e11.md": "/DH-TexasAbortions/static/media/DataBlog.6c5b6e11.md",
-    "static/media/Sources.465d19cf.md": "/DH-TexasAbortions/static/media/Sources.465d19cf.md",
+    "static/media/Future.1da29d11.md": "/DH-TexasAbortions/static/media/Future.1da29d11.md",
+    "static/media/Legislation.8592c920.md": "/DH-TexasAbortions/static/media/Legislation.8592c920.md",
+    "static/media/Scholars.7358fbe2.md": "/DH-TexasAbortions/static/media/Scholars.7358fbe2.md",
+    "static/media/Sources.c247aad6.md": "/DH-TexasAbortions/static/media/Sources.c247aad6.md",
+    "static/media/WhatItsLike.eeeaa613.md": "/DH-TexasAbortions/static/media/WhatItsLike.eeeaa613.md",
+    "static/media/WhyProject.65a96164.md": "/DH-TexasAbortions/static/media/WhyProject.65a96164.md",
+    "static/media/sophieGraph.7a06cd20.png": "/DH-TexasAbortions/static/media/sophieGraph.7a06cd20.png",
     "static/media/texas_counties.bb62b53f.png": "/DH-TexasAbortions/static/media/texas_counties.bb62b53f.png",
     "static/media/texas_income_2019.b29b712d.PNG": "/DH-TexasAbortions/static/media/texas_income_2019.b29b712d.PNG",
     "static/media/texas_income_2019_legend.1eabc1a5.PNG": "/DH-TexasAbortions/static/media/texas_income_2019_legend.1eabc1a5.PNG"
@@ -19,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.cc2c35fa.js",
     "static/js/2.2c3a3ca2.chunk.js",
-    "static/css/main.4f5be944.chunk.css",
-    "static/js/main.ae1348ea.chunk.js"
+    "static/css/main.4fd8c7ef.chunk.css",
+    "static/js/main.a8f82cf5.chunk.js"
   ]
 }
