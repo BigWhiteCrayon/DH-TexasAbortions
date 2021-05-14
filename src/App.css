@@ -10,27 +10,35 @@
 
 .Header{
   position:fixed;
-  height: 10vh;
+  height: calc(100px + 0.5vh);
   align-items: center;
   background-color: mediumslateblue;
-  padding-top: 1.5vh;
-  padding-bottom: 0;
-  padding-left: 5%;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 1.5%;
+  color: white;
+  width: 100%;
+  z-index: 4;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.HeaderNarrow{
+  position:fixed;
+  height: 10vw;
+  align-items: center;
+  background-color: mediumslateblue;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
   color: white;
   width: 100%;
   z-index: 4;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .TopCard{
-  background-color: whitesmoke;
-  padding: 5%;
-  margin: 2.5%;
-  margin-top: 13vh;
-  margin-bottom: 0;
-  width: 85%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  border-radius: 5px;
+  margin-top: calc(120px + 0.5vh);
+}
+.TopCardNarrow{
+  margin-top: calc(20px + 10vw);
 }
 .Card{
   background-color: white;
@@ -39,9 +47,35 @@
   margin-bottom: 0;
   width: 85%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
+  transition: 0.5s;
   border-radius: 5px;
   justify-items: center;
+}
+
+.SourcesLink{
+  position:absolute;
+  align-self: flex-end;
+}
+
+.Author{
+  
+    padding: 5%;
+    padding-top: 0% ;
+    padding-left: 5%;
+    padding-bottom: 0%;
+    font-size: calc(16px + 0.5vw);
+    text-align: left;
+    color: silver
+}
+
+.h3{
+  padding: 5%;
+  padding-top: 1% ;
+  padding-left: 2.5%;
+  padding-bottom: 0%;
+  color: darkslateblue;
+  font-size: calc(18px + 0.5vw);
+  text-align: left
 }
 
 .Title{
@@ -54,8 +88,7 @@
 .TitleNarrow{
   padding-left: 2.5vw;
   padding-bottom: 0%;
-  color: red;
-  font-size: calc(36px + 0.5vw);
+  font-size: 4vw;
   text-align: left
 }
 .SubtitleHeading{
@@ -63,8 +96,21 @@
   padding-top: 0% ;
   padding-left: 2.5%;
   padding-bottom: 0%;
-  font-size: calc(24px + 0.5vw);
+  font-size: calc(24px + 0.5vh);
   text-align: left
+}
+.SubtitleHeadingNarrow{
+  padding: 5%;
+  padding-top: 0% ;
+  padding-left: 2.5%;
+  padding-bottom: 0%;
+  font-size: 3vw;
+  text-align: left
+}
+.Graph{
+  width: 85%;
+  height: auto;
+  padding-left: 5%;
 }
 .Subtitle{
   padding: 5%;
@@ -78,11 +124,33 @@
 .bodyText{
   display: block;
   padding: 5%;
+  padding-top: 2.5%;
   width: 85%;
   font-size: calc(16px + 0.5vw);
   text-align: justify;
 }
-
+.bodyTextBlog{
+  display: block;
+  padding: 5%;
+  padding-bottom: 0%;
+  padding-top: 2.5%;
+  width: 85%;
+  font-size: calc(16px + 0.5vw);
+  text-align: justify;
+}
+.bodyTextList{
+  display: block;
+  padding: 5%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  padding-left: 7.5%;
+  width: 85%;
+  font-size: calc(16px + 0.5vw);
+  text-align: justify;
+}
+.ListItem{
+  margin-bottom: 1vh;
+}
 .Divider{
   min-height: 2px;
   width: 66%;

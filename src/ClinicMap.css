@@ -13,8 +13,7 @@
     float: right;
     height: 10%;
     min-width: 10vw;
-    min-height: 3vh;
-    padding: 1%;
+    height: 3vh;
     z-index: 2;
     margin: 5px;
     border-radius: 5px;
@@ -26,7 +25,7 @@
     float: left;
     height: 10%;
     min-width: 7.5vw;
-    min-height: 3vh;
+    height: 3vh;
     z-index: 2;
     margin: 5px;
     border-radius: 5px;
@@ -39,11 +38,19 @@
 .radiusButton{
     height: 10%;
     min-width: 7.5vw;
-    min-height: 3vh;
+    height: 3vh;
     z-index: 2;
     margin: 5px;
     border-radius: 5px;
     border-width: 0;
     background-color: coral;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.Legend{
+    position:absolute;
+    align-self: flex-end;
+    width: 25vh;
+    height: 25vh;
+    z-index:3;
 }

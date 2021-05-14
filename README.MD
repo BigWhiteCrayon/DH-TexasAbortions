@@ -7,7 +7,3 @@ this repo is meant for a DH project for college. If this isn't totally deprectae
 ---
 
 The purpose is mainly to look at the history of Abortions in Texas and try to draw some conclusions.
-
-Progress 5/12/21
-
-![](image/README/1620872459268.png)

@@ -1,28 +1,25 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import './App.css';
-import test from './blogPosts/TEST.md';
-import test2 from './blogPosts/Test2.md';
-
-const blogPosts = [test,test2]; 
 
 class Blogs extends React.Component{
-
+    
     text = [];
 
     componentDidMount(){
-        blogPosts.forEach((blogPost) =>
+        this.props.blogPosts.forEach((blogPost, index) =>
         fetch(blogPost).then(res => res.text())
-        .then(text => {this.text.push(text); this.setState({ready:'y'})}));
+        .then(text => {this.text[index] = text; this.setState({ready:'y'})}));
     }
 
     render(){
         return(
             this.text.map((post, index) => 
-            <div className = "Card">
+            <div className = "Card" key = {index}>
                     <ReactMarkdown 
-                    components ={{h1:headerRenderer, h2:headerRenderer, p:textRenderer}}
-                    key = {index}>{post}</ReactMarkdown>
+                    components ={{h1:headerRenderer, h2:headerRenderer, h3:headerRenderer, p:textRenderer,
+                    ul: listRederer}}
+                    >{post}</ReactMarkdown>
             </ div>
             )
         )
@@ -38,6 +35,11 @@ const headerRenderer = (props) => {
             </ div>
         );
     }
+    else if(props.level === 3){
+        return(
+            <div className="h3">{props.children[0]}</div>
+        )
+    }
     else{
         return(
             <i className="Author">{props.children[0]}</i>
@@ -47,8 +49,44 @@ const headerRenderer = (props) => {
 
 const textRenderer = (props) => {
     return(
-        <text className="bodyText">{props.children[0]}</ text>
+        <div className = "bodyTextBlog">
+            {props.node.children.map((child, index) => {
+                if(child.type === 'element' && child.tagName === 'a'){
+                    return (<a  href = {child.properties.href} key = {index}>{child.children[0].value}</ a>);
+                }
+                else if(child.type === 'element' && child.tagName === 'em'){
+                    return (<i   key = {index}>{child.children[0].value}</ i>);
+                }
+                else{
+                    return child.value;
+                }
+            })}
+        </ div>
     );
 }
+
+const listRederer = (props) => {
+    console.log(props)
+    return(
+        <div className = "bodyTextList">
+        {props.children.map((list, index) => {
+            if(list !== "\n" && list.props.children){
+                return (<div className="ListItem">{list.props.children.map((child) => {
+                    if(child.type === 'a'){
+                        
+                    console.log(child.props.children[0])
+                        return (<a  href = {child.props.href} key = {index}>{child.props.children[0]}</ a>);
+                    }
+                    else{
+                        return child.value;
+                    }
+                })}<br /></ div>);
+            }
+            return (null);            
+        })}
+        </ div>
+    )
+}
+
 
 export default Blogs;

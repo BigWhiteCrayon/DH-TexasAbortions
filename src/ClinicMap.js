@@ -4,10 +4,12 @@ import { GoogleMap, LoadScript, Marker, GroundOverlay, Circle } from '@react-goo
 import clinicLocations from './clinicLocations';
 
 import blankCounties from './texas_counties.png';
+import countyIncome2019 from './texas_income_2019.PNG';
+import countyIncome2019Legend from './texas_income_2019_legend.PNG';
 
 class ClinicMap extends React.Component {
     state = {
-      time: 'PreHB2',
+      time: 4,
       overlay: false,
       radius: false,
       radiusDistance: 160934.4
@@ -16,89 +18,102 @@ class ClinicMap extends React.Component {
     render() {
       let locations = [];
       let mapOverlay = blankCounties;
-      if(this.state.time === 'current'){
+      let mapLegend = null;
+      let mapBounds = origmapBounds;
+      if(this.state.time === 4){
         locations = clinicLocations.currentLocations;
+        mapOverlay = countyIncome2019;
+        mapBounds = currentMapBouns;
+        mapLegend = countyIncome2019Legend;
       }
-      else if(this.state.time === '1973'){
+      else if(this.state.time === 1){
           locations = clinicLocations.Loc1973;
       }
-      else if(this.state.time ==='PreHB2'){
+      else if(this.state.time ===2){
         locations = clinicLocations.PreHB2;
+        mapOverlay = countyIncome2019;
+        mapBounds = currentMapBouns;
+        mapLegend = countyIncome2019Legend;
       }
-      else if(this.state.time === 'PostHB2'){
+      else if(this.state.time === 3){
         locations = clinicLocations.PostHB2;
+        
+        mapOverlay = countyIncome2019;
+        mapBounds = currentMapBouns;
+        mapLegend = countyIncome2019Legend;
     }
       return (
         <div className="containerStyle" >
         
         <LoadScript
           googleMapsApiKey={process.env.REACT_APP_GOOGLE_API}
-        >
+        > 
+          
           <GoogleMap
             mapContainerStyle={containerStyle}
             center={center}
             zoom={5.5}
           >
-           
+            {/*<GroundOverlay bounds = {hatBounds} url = {hatURL} />*/}
+            {this.state.overlay ?<img src={mapLegend} alt="" className="Legend" /> : null}
             {this.state.overlay ? <GroundOverlay bounds = {mapBounds} url = {mapOverlay} /> : null}
             {
                 locations.map((loc, index) =>
-                <div>
+                <div key = {index*loc.lat}>
                   <Marker
-                    key = {index}
                     position = {{lat: loc.lat, lng: loc.long}}
                     //options = {{icon:mapIcon}}
                   /> 
                   <Circle
-                    key = {index}
                     center = {{lat: loc.lat, lng: loc.long}}
                     radius = {this.state.radiusDistance}
                     visible = {this.state.radius}
-                    options = {{strokeWeight: 0, fillColor: 'mediumSlateBlue'}}
+                    options = {{strokeWeight: 0.25, fillColor: 'coral'}}
                   />
                 </div>
                 )
             }
           </GoogleMap>
         </LoadScript>
-        <div>
-        <button className="dateButton"
+        <div style = {{flexDirection: 'row', justifyContent: 'center'}}>
+          <button className="dateButton"
           onClick={this.handleClick1973}
-          disabled = {this.state.time === '1973'}>1973</button>
-        <button className="dateButton"
+          disabled = {this.state.time === 1}>1973</button>
+          <button className="dateButton"
           onClick={this.handleClickPreHB2}
-          disabled = {this.state.time === 'PreHB2'}>Pre-HB2</button>
-        <button className="dateButton"
+          disabled = {this.state.time === 2}>Pre-HB2</button>
+          <button className="dateButton"
           onClick={this.handleClickPostHB2}
-          disabled = {this.state.time === 'PostHB2'}>Post-HB2</button>
-        <button className="dateButton" onClick={this.handleClickCurrent}
-           disabled = {this.state.time === 'current'}>Current</button>
-        <button className="overlayButton" onClick={this.handleClickOverlay}>Toggle Overlay</button>
-        <button className="radiusButton" onClick={this.handleClickRadiusOff}
-        disabled = {this.state.radius === false}>Radius Off</button>
-        <button className="radiusButton" onClick={this.handleClickRadius100M}
-        disabled = {this.state.radius === true && this.state.radiusDistance=== 160934.4}>100 Mile Radius</button>
-        <button className="radiusButton" onClick={this.handleClickRadius200M}
-        disabled = {this.state.radius === true && this.state.radiusDistance=== 321868.8}>200 Mile Radius</button>
+          disabled = {this.state.time === 3}>Post-HB2</button>
+          <button className="dateButton" onClick={this.handleClickCurrent}
+           disabled = {this.state.time === 4}>Current</button>
+          <button className="radiusButton" onClick={this.handleClickRadiusOff}
+          disabled = {this.state.radius === false}>Radius Off</button>
+          <button className="radiusButton" onClick={this.handleClickRadius100M}
+          disabled = {this.state.radius === true && this.state.radiusDistance=== 160934.4}>100 Mile Radius</button>
+          <button className="radiusButton" onClick={this.handleClickRadius200M}
+          disabled = {this.state.radius === true && this.state.radiusDistance=== 321868.8}>200 Mile Radius</button>
+        <button className="overlayButton" disabled = {this.state.time === 1}
+        onClick={this.handleClickOverlay}><div style ={{opacity: this.state.overlay ? '0.25' : '1'}}>Toggle Overlay</div></button>
         </div>
         </div>
       )
     }    
 
    handleClickCurrent = () => {
-    this.setState({time: 'current'});
+    this.setState({time: 4});
   }
 
   handleClick1973 = () => {
-      this.setState({time: '1973'})
+      this.setState({time: 1, overlay: false})
   }
 
   handleClickPreHB2 = () => {
-    this.setState({time: 'PreHB2'})
+    this.setState({time: 2})
   }
 
   handleClickPostHB2 = () => {
-    this.setState({time: 'PostHB2'})
+    this.setState({time: 3})
   }
   handleClickOverlay = () => {
       this.setState({overlay: !this.state.overlay});
@@ -136,19 +151,17 @@ const hatBounds = {
   east: -98,
   west: -105
 }*/
-
-const mapBounds = {
+const currentMapBouns = {
+  north: 37.25,
+  south: 25.15,
+  east: -93,
+  west: -107.1
+}
+const origmapBounds = {
   north: 38.98,
   south: 23.35,
   east: -92.85,
   west: -107.4
 };
 
-/*const mapIcon = {
-  url: 'https://static1.squarespace.com/static/5134ed45e4b066ad5331e95e/t/51638f47e4b0928e3b1fb47a/1365479239493/coral_circle.png',
-  scaledSize: {
-    height: 25,
-    width: 25
-  }
-};*/
 export default ClinicMap;
