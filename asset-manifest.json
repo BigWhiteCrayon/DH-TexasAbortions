@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/DH-TexasAbortions/static/css/main.29767440.chunk.css",
-    "main.js": "/DH-TexasAbortions/static/js/main.ad75ef38.chunk.js",
-    "main.js.map": "/DH-TexasAbortions/static/js/main.ad75ef38.chunk.js.map",
+    "main.css": "/DH-TexasAbortions/static/css/main.4f5be944.chunk.css",
+    "main.js": "/DH-TexasAbortions/static/js/main.ae1348ea.chunk.js",
+    "main.js.map": "/DH-TexasAbortions/static/js/main.ae1348ea.chunk.js.map",
     "runtime-main.js": "/DH-TexasAbortions/static/js/runtime-main.cc2c35fa.js",
     "runtime-main.js.map": "/DH-TexasAbortions/static/js/runtime-main.cc2c35fa.js.map",
     "static/js/2.2c3a3ca2.chunk.js": "/DH-TexasAbortions/static/js/2.2c3a3ca2.chunk.js",
     "static/js/2.2c3a3ca2.chunk.js.map": "/DH-TexasAbortions/static/js/2.2c3a3ca2.chunk.js.map",
     "index.html": "/DH-TexasAbortions/index.html",
-    "static/css/main.29767440.chunk.css.map": "/DH-TexasAbortions/static/css/main.29767440.chunk.css.map",
+    "static/css/main.4f5be944.chunk.css.map": "/DH-TexasAbortions/static/css/main.4f5be944.chunk.css.map",
     "static/js/2.2c3a3ca2.chunk.js.LICENSE.txt": "/DH-TexasAbortions/static/js/2.2c3a3ca2.chunk.js.LICENSE.txt",
-    "static/media/TEST.6bc6872c.md": "/DH-TexasAbortions/static/media/TEST.6bc6872c.md",
-    "static/media/Test2.70df45f3.md": "/DH-TexasAbortions/static/media/Test2.70df45f3.md",
-    "static/media/texas_counties.bb62b53f.png": "/DH-TexasAbortions/static/media/texas_counties.bb62b53f.png"
+    "static/media/DataBlog.6c5b6e11.md": "/DH-TexasAbortions/static/media/DataBlog.6c5b6e11.md",
+    "static/media/Sources.465d19cf.md": "/DH-TexasAbortions/static/media/Sources.465d19cf.md",
+    "static/media/texas_counties.bb62b53f.png": "/DH-TexasAbortions/static/media/texas_counties.bb62b53f.png",
+    "static/media/texas_income_2019.b29b712d.PNG": "/DH-TexasAbortions/static/media/texas_income_2019.b29b712d.PNG",
+    "static/media/texas_income_2019_legend.1eabc1a5.PNG": "/DH-TexasAbortions/static/media/texas_income_2019_legend.1eabc1a5.PNG"
   },
   "entrypoints": [
     "static/js/runtime-main.cc2c35fa.js",
     "static/js/2.2c3a3ca2.chunk.js",
-    "static/css/main.29767440.chunk.css",
-    "static/js/main.ad75ef38.chunk.js"
+    "static/css/main.4f5be944.chunk.css",
+    "static/js/main.ae1348ea.chunk.js"
   ]
 }
